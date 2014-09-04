@@ -38,6 +38,8 @@ gem 'simple_form'
 
 gem 'country_select'
 
+gem 'twitter'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
