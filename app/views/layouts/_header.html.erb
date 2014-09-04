@@ -1,5 +1,5 @@
 	<header>
-		<div class="col-xs-3">
+		<div class="col-xs-2">
 			<%= link_to root_path , :class => 'logo' do%>
 				<div class="circle">
 			        <br />
@@ -12,16 +12,14 @@
 		    <% end %>
 		</div>
 		
+		<h6 class="col-xs-4 hidden-xs slogan">
+			Sharing secret vim commands since 2014
+		</h6>
 
-		<div class="col-xs-4 hidden-xs slogan">
-			Splurting out onsolicited advice about enrepreneurship since 2014
-		</div>
 
-
-		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links" >
+		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links pull-right">
 			 <!-- Button trigger modal -->
 			  <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
-			  &nbsp;&nbsp;	
-  			  <%= link_to 'About', about_path %>
+			  &nbsp;&nbsp; <%= link_to 'About', about_path %>
 		</div>
 	</header>

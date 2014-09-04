@@ -1,0 +1,24 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Contribute Your Command</h4>
+      </div>
+      <div class="modal-body">
+    <%= simple_form_for Quote.create do |f| %>
+		<%= f.input :snippet, :label => "Enter your command here", :placeholder => ":wq!" %>
+		<%= f.input :description, :label => "What does it do?", :placeholder => "Save changes and exit." %>
+		<%= f.input :author, :label => "Your name", :placeholder => "Ilya" %>
+		<%= f.input :link, :label => "Give credit to author - where did you learn it", :placeholder => "http://bullium.com/support/vim.html" %>
+
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit 'Create', :class => 'btn btn-danger' %>
+	  <% end %>
+      </div>
+    </div>
+  </div>
+</div>
